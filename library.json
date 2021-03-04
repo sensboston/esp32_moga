@@ -1,0 +1,20 @@
+{
+  "name": "esp32_moga",
+  "version": "1.0.0",
+  "keywords": "Arduino, gamepad, Bluetooth, SPP, STM32, ESP8266, NodeMCU, ESP32, M5Stack",
+  "description": "Simple library to use MOGA bluetooth gamepads with ESP32",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/sensboston/esp32_moga"
+  },
+  "authors":
+  [
+    {
+        "name": "sensboston",
+        "maintainer": true
+    }
+  ],
+  "frameworks": "arduino",
+  "platforms": "espressif8266, espressif32, ststm32"
+}
