@@ -26,6 +26,7 @@ class MogaGamepad
 		int pollInterval = 50;
 
 		void begin(String remoteName, String localName = "ESP32");
+		void begin(uint8_t remoteAddress[], String localName = "ESP32");
         void poll();
 		bool changed();
 		bool isConnected();

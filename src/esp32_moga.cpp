@@ -70,6 +70,16 @@ void MogaGamepad::begin(String remoteName, String localName)
 	bts.connect(remoteName);
 }
 
+void MogaGamepad::begin(uint8_t remoteAddress[], String localName)
+{
+	bConnected = false;
+	// Start Bleutooth Serial in SPP mode
+	bts.register_callback(spp_callback);
+    bts.enableSSP();
+    bts.begin(localName, true);
+	bts.connect(remoteAddress);
+}
+
 bool MogaGamepad::isConnected() { return bConnected; }
 
 void MogaGamepad::setOnConnected(SPP_CALLBACK *callback) { pConnected = callback; }
